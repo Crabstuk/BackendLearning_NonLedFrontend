@@ -37,15 +37,22 @@ giftUpload.addEventListener("keydown",event =>{
 
 const UploadGiftToDB = () => {
     console.log("works ")
+    console.log(sourceOfGiftInput.value)
     fetch("http://localhost:3000/prezenty",{
         method:"POST",
         headers:{'Content-Type': 'application/json'},
-        body:{
+        body:JSON.stringify({
             NameOfGift:nameOfGiftInput.value,
-            sourceOfGift:sourceOfGiftInput.value,
+            SourceOfGift:sourceOfGiftInput.value,
             IsItAGoodGift:IsItAGoodGiftCheckbox.checked? 1:0
-        }
+        })
     }).then(() =>{
-        
+        nameOfGiftInput.value = ""
+        sourceOfGiftInput.value = ""
+        IsItAGoodGiftCheckbox.checked = 0
+        sendGiftToDBButton.disabled = true
     })
 }
+
+
+

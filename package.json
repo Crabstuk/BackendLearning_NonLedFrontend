@@ -1,0 +1,23 @@
+{
+  "name": "backendlearning_nonledfrontend",
+  "version": "1.0.0",
+  "description": "la.ksjnd.as",
+  "homepage": "https://github.com/Crabstuk/BackendLearning_NonLedFrontend#readme",
+  "bugs": {
+    "url": "https://github.com/Crabstuk/BackendLearning_NonLedFrontend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crabstuk/BackendLearning_NonLedFrontend.git"
+  },
+  "license": "ISC",
+  "author": "Crabstuk & Sir michalak web",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.11.0"
+  }
+}
